@@ -1,7 +1,7 @@
 package HouseExample;
 
 public class House {
-    private int doors;
+    protected int doors;
     private int windows;
     private int size;
 
