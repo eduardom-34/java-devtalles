@@ -10,5 +10,11 @@ public class Main {
         vehicle.setYear(2001);
 
         System.out.println(vehicle.toString());
+
+        Car myCar = new Car("Toyota", "Corola", 2015, 4);
+        Motorcycle motorcycle = new Motorcycle("Honda", "CBR", 2015, false);
+
+        myCar.start();
+        motorcycle.start();
     }
 }

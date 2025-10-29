@@ -6,6 +6,10 @@ public class Car extends Vehicle {
         this.doors = doors;
     }
 
+    @Override
+    public void start() {
+        System.out.println("El auto está encendido");
+    }
 
     public int getDoors() {
         return doors;
