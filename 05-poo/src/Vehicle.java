@@ -9,6 +9,14 @@ public class Vehicle {
         this.year = year;
     }
 
+    public void start() {
+        System.out.println("Encendido el vehiculo");
+    }
+    public void stop() {
+        System.out.println("El vehiculo está parado");
+    }
+
+
     public String getBrand() {
         return brand;
     }
