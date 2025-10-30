@@ -11,10 +11,19 @@ public class Main {
 
         System.out.println(vehicle.toString());
 
-        Car myCar = new Car("Toyota", "Corola", 2015, 4);
-        Motorcycle motorcycle = new Motorcycle("Honda", "CBR", 2015, false);
+        Vehicle myCar = new Car("Toyota", "Corola", 2015, 4);
+        Vehicle motorcycle = new Motorcycle("Honda", "CBR", 2015, false);
 
         myCar.start();
         motorcycle.start();
+
+        printVehicle(motorcycle);
+        printVehicle(myCar);
+
+        ((Car)myCar).setDoors(5);
+        printVehicle(myCar);
+    }
+    public static void printVehicle(Vehicle vehicle){
+        System.out.println(vehicle.toString());
     }
 }
