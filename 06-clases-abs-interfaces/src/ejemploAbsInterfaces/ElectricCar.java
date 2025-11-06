@@ -3,6 +3,11 @@ package ejemploAbsInterfaces;
 public class ElectricCar extends Vehicle implements Electric, SelfDriving{
     private int batterLevel;
 
+    public ElectricCar(String brand, String model, int year, Color color, VehicleStatus vehicleStatus, int batterLevel) {
+        super(brand, color, model, vehicleStatus, year);
+        this.batterLevel = batterLevel;
+    }
+
     public ElectricCar(String brand, String model, int year, int batterLevel) {
         super(brand, model, year);
         this.batterLevel = batterLevel;
@@ -22,5 +27,12 @@ public class ElectricCar extends Vehicle implements Electric, SelfDriving{
     @Override
     public void activateAutoPilot() {
         System.out.println("Modo piloto activado");
+    }
+
+    @Override
+    public String toString() {
+        return "ElectricCar{" +
+                "batterLevel=" + batterLevel +
+                '}' + super.toString();
     }
 }

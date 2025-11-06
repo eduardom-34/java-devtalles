@@ -4,6 +4,16 @@ public abstract class Vehicle {
     private String brand;
     private String model;
     private int year;
+    private Color color;
+    private VehicleStatus vehicleStatus;
+
+    public Vehicle(String brand, Color color, String model, VehicleStatus vehicleStatus, int year) {
+        this.brand = brand;
+        this.color = color;
+        this.year = year;
+        this.model = model;
+        this.vehicleStatus = vehicleStatus;
+    }
 
     public Vehicle(String brand, String model, int year) {
         this.brand = brand;
@@ -47,12 +57,15 @@ public abstract class Vehicle {
         this.year = year;
     }
 
+
     @Override
     public String toString() {
         return "Vehicle{" +
                 "brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
                 ", year=" + year +
+                ", color=" + color +
+                ", vehicleStatus=" + vehicleStatus +
                 '}';
     }
 }

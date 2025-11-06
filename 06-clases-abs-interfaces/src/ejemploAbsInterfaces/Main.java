@@ -13,5 +13,9 @@ public class Main {
         };
 
         System.out.println(vehicle.toString());
+
+        Vehicle electric = new ElectricCar("Fiat", "Duna", 2025, Color.RED, VehicleStatus.AVAILABLE, 80);
+
+        System.out.println(electric.toString());
     }
 }
