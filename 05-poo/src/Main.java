@@ -5,17 +5,17 @@ import com.sun.security.jgss.GSSUtil;
 public class Main {
     public static void main(String[] args) {
 
-        Vehicle vehicle = new Vehicle("Fiat", "Duna", 2000);
+        /*Vehicle vehicle = new Vehicle("Fiat", "Duna", 2000);
 
         vehicle.setYear(2001);
 
-        System.out.println(vehicle.toString());
+        System.out.println(vehicle.toString());*/
 
         Vehicle myCar = new Car("Toyota", "Corola", 2015, 4);
         Vehicle motorcycle = new Motorcycle("Honda", "CBR", 2015, false);
 
-        myCar.start();
-        motorcycle.start();
+        ((Car)myCar).start();
+        ((Motorcycle)motorcycle).start();
 
         printVehicle(motorcycle);
         printVehicle(myCar);
