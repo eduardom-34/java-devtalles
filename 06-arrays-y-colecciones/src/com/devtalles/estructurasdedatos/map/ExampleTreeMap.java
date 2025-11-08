@@ -1,4 +1,4 @@
-package com.devtalles.estructurasdedatos.set.map;
+package com.devtalles.estructurasdedatos.map;
 
 import java.util.HashMap;
 import java.util.Map;
