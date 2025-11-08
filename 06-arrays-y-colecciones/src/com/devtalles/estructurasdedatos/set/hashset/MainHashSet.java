@@ -1,12 +1,11 @@
-package com.devtalles.estructurasdedatos.list.LinkedHashSet;
+package com.devtalles.estructurasdedatos.set.hashset;
 
 import java.util.HashSet;
-import java.util.LinkedHashSet;
 import java.util.Set;
 
-public class ExampleLinkedHashSet {
+public class MainHashSet {
     public static void main(String[] args) {
-        Set<Integer> numbers = new LinkedHashSet<>();
+        Set<Integer> numbers = new HashSet<>();
 
         numbers.add(10);
         numbers.add(20);
@@ -22,8 +21,5 @@ public class ExampleLinkedHashSet {
         numbers.remove(60);
         numbers.add(90);
         System.out.println(numbers);
-
-
-        System.out.println(numbers.contains(50));
     }
 }

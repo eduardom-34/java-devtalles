@@ -1,4 +1,4 @@
-package com.devtalles.estructurasdedatos.hashset;
+package com.devtalles.estructurasdedatos.set.hashset;
 
 import java.util.HashSet;
 import java.util.Objects;
