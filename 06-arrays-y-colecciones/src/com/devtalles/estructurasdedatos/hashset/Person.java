@@ -15,6 +15,8 @@ public class Person {
 
     @Override
     public boolean equals(Object o) {
+
+        if(this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Person person = (Person) o;
         return Objects.equals(dni, person.dni);
@@ -25,6 +27,14 @@ public class Person {
         return Objects.hashCode(dni);
     }
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "dni='" + dni + '\'' +
+                ", name='" + name + '\'' +
+                '}';
+    }
+
     public static void main(String[] args) {
         Set<Person> persons = new HashSet<>();
         Person person1 = new Person("Cesar", "123");
@@ -32,14 +42,28 @@ public class Person {
         Person person3 = new Person("Ana2", "456");
         Person person4 = null;
 
+        //Create
         persons.add(person1);
         persons.add(person2);
         persons.add(person3);
         persons.add(person4);
 
+        //read or List
+        System.out.println(persons);
+
         for (Person person: persons){
             if(person!=null)
             System.out.println(person.name);
         }
+
+        //Delete
+        persons.remove(person2);
+        System.out.println(persons
+        );
+
+        //Update
+        persons.add(person2);
+
+        System.out.println(persons);
     }
 }
