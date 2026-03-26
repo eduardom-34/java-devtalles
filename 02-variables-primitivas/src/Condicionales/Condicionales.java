@@ -2,16 +2,22 @@ package Condicionales;
 
 public class Condicionales {
     public static void main(String[] args) {
-        int age = -10;
+        int age = 19;
+        double average = 7.5;
 
-        if(age > 18) {
-            System.out.println("Es mayor a 18");
-        } else if(age <= 0){
-            System.out.println("No es valido");
-        } else {
-            System.out.println("Es menor a 18");
+        boolean isadult = age > 16;
+        boolean hasPassingGrade = average >= 7;
+
+        if( isadult && hasPassingGrade) {
+            System.out.println("El estudiante cumple con todos los requisitos");
         }
 
+        if(isadult == false ){
+            System.out.println("Es un adulto");
+        }
+
+        //comentarios
+        /*
         int day = 30;
 
         switch (day) {
@@ -27,5 +33,6 @@ public class Condicionales {
             default:
                 System.out.println("El dato ingresado no se valido");
         }
+        */
     }
 }
